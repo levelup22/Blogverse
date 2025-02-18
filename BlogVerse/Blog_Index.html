@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogVerse</title>
+    <link rel="icon" type="image/x-icon" href="pen-tool.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="blogeds.css">
+</head>
+<body>
+    <!-- Add this navbar section before the hero section -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="menu-brand-group">
+                    <button class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a href="#" class="nav-brand">
+                        <i class="fas fa-pen-fancy"></i>
+                        <span>BlogVerse</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-center">
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search stories, people, and tags...">
+                    </div>
+                </div>
+                <div class="nav-tabs">
+                    <a href="#" class="nav-tab active">For You</a>
+                    <a href="#" class="nav-tab">Following</a>
+                    <a href="#" class="nav-tab">Trending</a>
+                    <a href="#" class="nav-tab">Categories</a>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <button class="create-btn">
+                    <i class="fas fa-plus"></i>
+                    <span>Create</span>
+                </button>
+                <div class="user-controls">
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <div class="toggle-ripple"></div>
+                    </button>
+                    <div class="user-profile">
+                        <div class="profile-wrapper">
+                            <img src="https://ui-avatars.com/api/?name=User&background=random" alt="Profile">
+                            <div class="status-dot"></div>
+                        </div>
+                        <div class="profile-dropdown">
+                            <div class="dropdown-header">
+                                <div class="user-info">
+                                    <img src="https://ui-avatars.com/api/?name=User&background=random" alt="Profile">
+                                    <div class="info-text">
+                                        <span class="user-name">John Doe</span>
+                                        <span class="user-email">john@example.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Your Profile</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-edit"></i>
+                                    <span>Your Posts</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-moon"></i>
+                                    <span>Dark Mode</span>
+                                    <div class="toggle-switch">
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-cog"></i>
+                                    <span>Settings</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span>Sign Out</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add this side menu HTML after the navbar -->
+    <div class="side-menu">
+        <div class="side-menu-header">
+            <div class="brand">
+                <i class="fas fa-pen-fancy"></i>
+                <span>BlogVerse</span>
+            </div>
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="side-menu-content">
+            <div class="menu-section">
+                <a href="#" class="menu-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-compass"></i>
+                    <span>Explore</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-fire"></i>
+                    <span>Trending</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-bookmark"></i>
+                    <span>Bookmarks</span>
+                </a>
+            </div>
+
+            <div class="menu-section">
+                <h3>Library</h3>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-history"></i>
+                    <span>History</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Liked Posts</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Read Later</span>
+                </a>
+            </div>
+
+            <div class="menu-section">
+                <h3>Following</h3>
+                <a href="#" class="menu-item">
+                    <div class="channel-avatar">T</div>
+                    <span>Tech Insights</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <div class="channel-avatar">D</div>
+                    <span>Design Daily</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <div class="channel-avatar">C</div>
+                    <span>Code Masters</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Welcome to BlogVerse</h1>
+                <p class="hero-subtitle">The next-gen blogging platform inspired by YouTube, Reddit, and X. Create, share, and engage like never before.</p>
+                <div class="cta-buttons">
+                    <button class="cta-primary">Get Started</button>
+                    <button class="cta-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Add hero image/illustration here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title">Why Choose BlogVerse?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-video feature-icon"></i>
+                <h3 class="feature-title">YouTube-Style Content</h3>
+                <p class="feature-description">Embed videos, create shorts, and stream live - all in one place.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-comments feature-icon"></i>
+                <h3 class="feature-title">Community First</h3>
+                <p class="feature-description">Build engaged communities with Reddit-style discussions and upvotes.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt feature-icon"></i>
+                <h3 class="feature-title">Real-Time Updates</h3>
+                <p class="feature-description">Share quick updates and trending topics like X (Twitter).</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="blogfrontlogic.js"></script>
+   
+</body>
+</html>
+
